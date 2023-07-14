@@ -14,6 +14,10 @@ body {
     font-family: var(--space-grotesk);
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     padding-top: 44px;
     display: block;
