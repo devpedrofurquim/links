@@ -1,0 +1,161 @@
+:root {
+    --black: #292929;
+    --secondary: #555761;
+    --space-grotesk: 'Space Grotesk', sans-serif;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+    --fs-regular: 14px;
+    --fs-medium: 16px;
+    --fs-bold: 22px;
+}
+
+body {
+    font-family: var(--space-grotesk);
+}
+
+header {
+    padding-top: 44px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation {
+    text-align: center;
+    color: var(--black);
+    font-weight: var(--bold);
+    font-size: var(--fs-bold);
+    font-family: var(--space-grotesk);
+}
+
+.profile {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid var(--black);
+}
+
+.short-bio {
+    text-align: center;
+    color: var(--black);
+    font-weight: var(--medium);
+    font-size: var(--fs-medium);
+    font-family: var(--space-grotesk);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 30px;
+    padding-left: 0;
+}
+
+.social-media-links {
+    list-style: none;
+}
+
+.social-media-links .bi {
+    font-size: 24.2px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.links-label {
+    text-align: center;
+    font-size: var(--fs-regular);
+    color:var(--secondary);
+    font-family: var(--space-grotesk);
+}
+
+.links-label h3 {
+    padding: 16px 0 8px 0;
+}
+
+.btn-container {
+    margin: 0 24px 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-list {
+    margin: 0 0;
+    padding-left: 0px;
+}
+
+.btn-list li {
+    margin: 16px 0;
+    list-style: none;
+}
+
+.btn-list li button {
+    width: 408px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+}
+
+.btn-container li button div {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container li button div h3 {
+    font-weight: var(--medium);
+    font-size: 16px;
+    font-family: var(--space-grotesk);
+}
+
+.btn-list li button img {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-list li button i {
+    font-size: 26px;
+    margin: 10px;
+}
+
+.btn-list li button:hover {
+    box-shadow: 3px 3px;
+}
+
+footer {
+    margin-top: 44px;
+    margin-bottom: 24px;
+    font-family: var(--space-grotesk);
+    color: var(--black);
+    text-align: center;
+}
+
+footer h3 {
+    font-size: var(--fs-regular);
+    font-weight: var(--regular);
+}
+
+footer h3 span{
+    font-weight: var(--bold);
+}
+
+
+@media only screen and (min-width: 260px) {
+    .btn-list li button {
+        width: 308px;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    .btn-list li button {
+        width: 538px;
+    }
+}
